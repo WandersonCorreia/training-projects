@@ -16,4 +16,5 @@ Compartilhar conhecimento, registrar evolução e servir como portfólio públic
 
 ## 📌 Observações
 Este repositório é voltado para fins educacionais e experimentais.
+versão do Pyhon 3.12
 
