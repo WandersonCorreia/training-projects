@@ -23,16 +23,9 @@ pip install openai python-dotenv requests
 
 Crie um arquivo .env na raiz do projeto com sua chave da OpenAI:
 
-
-
-Shell
-env isn’t fully supported. Syntax highlighting is based on Shell.
-
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ▶️ Como usar
 Execute o script principal:
-
-
 
 
 Shell
