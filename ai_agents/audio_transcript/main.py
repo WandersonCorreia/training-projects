@@ -12,7 +12,7 @@ def meu_app():
 
     if arquivo:
         legenda = legendar(arquivo, contexto)
-        st.write(f"Arquivo{arquivo.name} legendado com sucesso")
+        st.write(f"Arquivo {arquivo.name} legendado com sucesso")
         st.write(legenda)
 
 

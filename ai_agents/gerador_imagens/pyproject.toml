@@ -1,0 +1,22 @@
+[project]
+name = "gerador-imagens"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "WandersonCorreia",email = "wandersoncorreia@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai (>=1.109.1,<2.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "gerador_imagens", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
