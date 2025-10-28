@@ -1,6 +1,6 @@
 # Training Projects
 
-Este repositório contém projetos de treinamento desenvolvidos por Wanderson Correia durante sua jornada de aprendizado em Python.
+Este repositório contém projetos de treinamento desenvolvidos por Wanderson Correia durante minha jornada de aprendizado em Python.
 
 ## 📁 Estrutura
 - Cada pasta representa um projeto individual.
@@ -18,3 +18,7 @@ Compartilhar conhecimento, registrar evolução e servir como portfólio públic
 Este repositório é voltado para fins educacionais e experimentais.
 versão do Pyhon 3.12
 
+👤 Autor
+Wanderson de Correia
+Custom Software Engineering Assoc Mgr
+Belo Horizonte, MG
