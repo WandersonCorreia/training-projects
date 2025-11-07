@@ -1,6 +1,6 @@
 # 🕒 Automação de Marcação de Ponto
 
-Este projeto foi desenvolvido com o objetivo de automatizar a marcação do ponto eletrônico na empresa onde trabalho. Além disso, serve como exercício prático para o meu treinamento em Python, incorporando funcionalidades adicionais como abertura de programas e controle de execução por período do dia.
+Este projeto foi desenvolvido com o objetivo de automatizar a marcação do ponto eletrônico na empresa onde trabalho. Além disso, serve como exercício prático para o meu treinamento em Python, incorporando funcionalidades adicionais como abertura de programas, manipulação de arquivos json, controle de execução por período do dia e envio de SMS.
 
 ## 📁 Estrutura do Projeto
 .
@@ -9,12 +9,14 @@ Este projeto foi desenvolvido com o objetivo de automatizar a marcação do pont
 │   ├── list_programs.json   # Lista de programas a serem abertos
 │   ├── controle_execucao.json  # Registro de execuções por período
 │   └── automacao.log        # Arquivo de log gerado pela automação
+|   └── sms.log              # Arquivo de configuacao do SMS
 └── apps/
-├── navegador.py         # Automação via Selenium para marcar o ponto
-├── helpers.py           # Funções auxiliares: logging e verificação de processos
-├── controle.py          # Controle de execução por período
-├── diversos.py          # Abertura de programas com base em arquivo JSON
-└── config.py            # Configuração do sistema de logging
+|   ├── navegador.py         # Automação via Selenium para marcar o ponto
+|   ├── helpers.py           # Funções auxiliares: logging e verificação de processos
+|   ├── controle.py          # Controle de execução por período
+|   ├── diversos.py          # Abertura de programas com base em arquivo JSON
+|   └── config.py            # Configuração do sistema de logging
+|   └── sms.py               # envio de SMS com resultado da automacao 
 
 ## ⚙️ Funcionalidades
 
@@ -68,6 +70,10 @@ Em caso de erro, o sistema registra no log e encerra o navegador com segurança.
 
 - Configura o sistema de logging para registrar mensagens no arquivo `automacao.log` dentro da pasta `data`
 
+### sms.py
+- `ler_dados_json()`: carrega os dados do arquivo `sms.json` execucao da API do twilio
+- `envia_sms(mensagem)`: envia mensagem de texto, via twilio, com o resultado do processamento
+
 ## 🚀 Como Executar
 
 Certifique-se de que todas as dependências estejam instaladas e execute o script principal:
@@ -76,11 +82,13 @@ Certifique-se de que todas as dependências estejam instaladas e execute o scrip
 python everyday.py
 
 A automação pode ser agendada via agendador de tarefas do sistema operacional para rodar nos horários desejados.
+ou pode-se gerar um executável.
 🛠️ Tecnologias Utilizadas
 
 Python 3.x
 Selenium WebDriver
 psutil
+twilio
 subprocess
 Módulos padrão (datetime, time, json, os, logging)
 
@@ -88,3 +96,6 @@ Módulos padrão (datetime, time, json, os, logging)
 Wanderson de Correia
 Custom Software Engineering Assoc Mgr
 Belo Horizonte, MG
+
+Obs: os dados da conta do twilio e o endereço WEB do relógio foram omitidos. 
+     Por ser uma aplicação expecífica, a navegação WEB deve ser ajustada para cada caso.

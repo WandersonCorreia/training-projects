@@ -9,7 +9,7 @@ from apps.helpers import log
 def marcar_ponto():
     ''' Abre o navegador, acessa o portal RH e marca o ponto.'''
     driver = webdriver.Edge()  # ou Chrome, Firefox
-    driver.get("https://portalrhmyway.accenture.com")
+    driver.get("https://portalxxxxx.xxxxx.com")
 
     # Espera até que o botão esteja visível
     try:
